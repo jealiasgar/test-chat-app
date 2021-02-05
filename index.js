@@ -17,10 +17,10 @@ io.on("connection", (socket) => {
 const PORT = 3000;
 const HOST = "0.0.0.0";
 
-// http.listen(port, () => {
-//   console.log(`Socket.IO server running at http://localhost:${port}/`);
-// });
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+http.listen(port, () => {
+  console.log(`Socket.IO server running at http://localhost:${PORT}/`);
+});
+// app.listen(PORT, HOST);
+// console.log(`Running on http://${HOST}:${PORT}`);
 
 console.log(http, "HTTP");
